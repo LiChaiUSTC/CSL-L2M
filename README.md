@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 
 ## Preprocessing
-1. Prepare MIDI dataset with corresponding lyrics
+1. Prepare MIDI dataset with corresponding lyrics  
 We provide several examples in the `data/Midi` directory. In the future, we plan to share our precisely annotated parallel lyric-melody dataset, which consists of 10,170 Chinese pop songs with a 4/4 time signature.  
 2. Convert MIDI to REMI-Aligned 
 ```bash
