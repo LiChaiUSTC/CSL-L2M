@@ -73,7 +73,7 @@ python generate_CSLL2M.py [config file] [ckpt path] [output dir] [num songs] [nu
 ```
 * e.g.
 ```bash
-python generate_CSLL2M.py config/CSLL2M.yaml pretrained_CSLL2M.pt results/ 1 5
+python generate_CSLL2M.py config/CSLL2M.yaml pretrained_CSLL2M.pt generated_midis/ 1 5
 ```
 
 
