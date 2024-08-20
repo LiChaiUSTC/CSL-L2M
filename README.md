@@ -75,7 +75,7 @@ python generate_CSLL2M.py [config file] [ckpt path] [output dir] [num songs] [nu
 python generate_CSLL2M.py config/CSLL2M.yaml pretrained_CSLL2M.pt generated_midis/ 1 5
 ```
 
-## Acknowledgement
+## Acknowledgements
 Our code is based on [MuseMorphose](https://github.com/YatingMusic/MuseMorphose/) and [FIGARO](https://github.com/dvruette/figaro/).
 
 
