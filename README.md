@@ -76,7 +76,7 @@ python generate_CSLL2M.py config/CSLL2M.yaml pretrained_CSLL2M.pt generated_midi
 ```
 
 ## Acknowledgement
-Our code is based on [MuseMorphose](https://github.com/YatingMusic/MuseMorphose/).
+Our code is based on [MuseMorphose](https://github.com/YatingMusic/MuseMorphose/) and [FIGARO](https://github.com/dvruette/figaro/).
 
 
 
