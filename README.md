@@ -25,6 +25,7 @@ python mid2events.py [output dir]
 python events2words.py   
 ```
 (Note: We provide the dictionaries used in our training, i.e., `data/dictionary_melody.pkl` and `data/dictionary_lyric.pkl`.)  
+
 4. Extract part-of-speech (POS) tags and tones from the lyrics  
 ```bash
 python extract_PosTone.py  
@@ -33,8 +34,8 @@ python extract_PosTone.py
 ```bash
 python extract_StatisticalAttributes.py  
 ```
-6. Extract learned musical features
-    a. Train a VQ-VAE model
+6. Extract learned musical features  
+   a. Train a VQ-VAE model
 
 
 
