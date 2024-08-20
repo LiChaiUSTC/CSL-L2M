@@ -1,0 +1,106 @@
+data:
+    data_dir:         data/REMIaligned_events
+    train_split:      data/train.pkl
+    val_split:        data/val.pkl
+    test_split:       data/test.pkl
+    vocab_path_melody:       data/dictionary_melody.pkl
+    vocab_path_lyric:       data/dictionary_lyric.pkl
+    max_seqs:         64                 
+    enc_seqlen:       128
+    dec_seqlen:       2048               
+    batch_size:       4
+
+model:
+    enc_n_layer:      12
+    enc_n_head:       8
+    enc_d_model:      512
+    enc_d_ff:         2048
+    dec_n_layer:      12
+    dec_n_head:       8
+    dec_d_model:      512
+    dec_d_ff:         2048
+    d_embed:          512
+    d_latent:         128
+    d_ND_emb:     32
+    d_Align_emb:      32
+    d_PM_emb:      32
+    d_DM_emb:      32
+    d_PV_emb:  32
+    d_PR_emb: 32
+    d_DV_emb: 32
+    d_DR_emb: 32
+    d_MCD_emb: 32
+    d_DMM_emb: 32
+    d_AA_emb: 32
+    d_CM_emb: 32
+    d_struct_emb: 32
+    d_key_emb:  32
+    d_emotion_emb: 32
+    d_pos_emb:  128
+    d_tone_emb:  128
+    d_learned_features:  128
+    n_ND_cls: 64
+    n_Align_cls: 64
+    n_PM_cls: 64
+    n_DM_cls: 64
+    n_PV_cls: 64
+    n_PR_cls: 64
+    n_DV_cls: 64
+    n_DR_cls: 64
+    n_MCD_cls: 64 
+    n_DMM_cls: 64
+    n_AA_cls: 64
+    n_CM_cls: 64
+    n_struct_cls: 5
+    n_key_cls: 24
+    n_emotion_cls: 3
+    n_pos_cls:  55
+    n_tone_cls:  5
+    f_key: True
+    f_emotion: True
+    f_struct: True
+    f_Align: True
+    f_ND: True
+    f_PM: True
+    f_PV: True
+    f_PR: True
+    f_DMM: True
+    f_AA: True
+    f_CM: True
+    f_DM: True
+    f_DV: True
+    f_DR: True
+    f_MCD: True 
+    f_leared_features: False
+    f_pos: True
+    f_tone: True
+    use_musc_ctls: True
+    pretrained_params_path:      null
+    pretrained_optim_path:       null
+
+training:
+    device:           cuda:0
+    ckpt_dir:         ./config/CSLL2M
+    trained_steps:    0
+    max_epochs:       12
+    max_lr:           1.0e-4
+    min_lr:           5.0e-6
+    lr_warmup_steps:  200
+    lr_decay_steps:   150000
+    no_kl_steps:      10000
+    kl_cycle_steps:   5000
+    kl_max_beta:      1.0
+    free_bit_lambda:  0.25
+    constant_kl:      False
+    ckpt_interval:    1000
+    log_interval:     10
+    val_interval:     50
+
+generate:
+    temperature:                1.2
+    nucleus_p:                  0.9
+    use_latent_sampling:        False
+    latent_sampling_var:        0.0
+    max_seqs:                   64       # could be set to match the longest input piece during generation (inference)
+    dec_seqlen:                 2048     # could be set to match the longest input piece during generation (inference)
+    max_input_dec_seqlen:       2048     # should be set to equal to or less than `dec_seqlen` used during training
