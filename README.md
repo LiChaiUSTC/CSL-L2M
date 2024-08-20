@@ -36,7 +36,16 @@ python extract_StatisticalAttributes.py
 ```
 * Extract learned musical features  
    1. Train a VQ-VAE model
-   2. ni
+      ```bash
+      python train_VQVAE.py [config file]
+      ```
+      * e.g.
+      ```bash
+      python train_VQVAE.py config/VQVAE.yaml
+      ```
+      (Note: We provide our trained VQ-VAE(https://drive.google.com/file/d/1xyvK3Hasd8IdBa1m4RPTP30eiGZaJyTj/view?usp=drive_link) checkpoint.)
+      
+   3. ni
 
 
 
