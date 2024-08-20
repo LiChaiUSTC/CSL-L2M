@@ -30,12 +30,12 @@ python events2words.py
 ```bash
 python extract_PosTone.py  
 ```
-* Extract statistical musical attribute classes 
+* Compute statistical musical attribute classes 
 ```bash
 python extract_StatisticalAttributes.py  
 ```
 * Extract learned musical features  
-   1. Train a VQ-VAE model
+   1. First, train a VQ-VAE model
       ```bash
       python train_VQVAE.py [config file]
       ```
@@ -45,7 +45,24 @@ python extract_StatisticalAttributes.py
       ```
       (Note: We provide our trained [VQ-VAE](https://drive.google.com/file/d/1xyvK3Hasd8IdBa1m4RPTP30eiGZaJyTj/view?usp=drive_link) checkpoint.)
       
-   3. ni
+   3. Then, extract the learned musical features from the pre-trained VQ-VAE model
+      ```bash
+      python extract_LearnedFeats.py [config file] [ckpt path] [output dir]
+      ```
+
+## Training
+```bash
+python train_CSLL2M.py [config file]
+```
+* e.g.
+1. Train CSL-L2M
+   ```bash
+   python train.py config/CSLL2M.yaml
+   ```
+3. Train CSL-L2M with learned musical features
+   ```bash
+   python train.py config/CSLL2M_withLearedFeats.yaml
+   ```
 
 
 
