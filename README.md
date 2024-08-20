@@ -33,7 +33,8 @@ python extract_PosTone.py
 ```bash
 python extract_StatisticalAttributes.py  
 ```
-6. Extract learned musical features 
+6. Extract learned musical features
+    a. Train a VQ-VAE model
 
 
 
