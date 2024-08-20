@@ -6,7 +6,6 @@ submitted to _AAAI-25_.
 
 [Demo website](https://sites.google.com/view/csl-l2m/)
 
-
 ## Setup
 * Python >= 3.6
 * Install required packages
@@ -67,7 +66,6 @@ python train_CSLL2M.py [config file]
 (Note: Training on different controls can be achieved by specifying the _flag_ parameters of the config file. We provide our trained [CSL-L2M](https://drive.google.com/file/d/1ylVTiDd_fwif2ISQzn9bxxYSkfEzXjQu/view?usp=drive_link) and [CSL-L2M with learned musical features](https://drive.google.com/file/d/1U6xazAovM7Yp5d-DtxrzhsF_3NDDIZs2/view?usp=drive_link) checkpoints.)  
 
 
-
 ## Generation
 ```bash
 python generate_CSLL2M.py [config file] [ckpt path] [output dir] [num songs] [num samples per song]
@@ -77,9 +75,8 @@ python generate_CSLL2M.py [config file] [ckpt path] [output dir] [num songs] [nu
 python generate_CSLL2M.py config/CSLL2M.yaml pretrained_CSLL2M.pt generated_midis/ 1 5
 ```
 
-
-
-
+## Acknowledgements
+Our code is based on [MuseMorphose](https://github.com/YatingMusic/MuseMorphose/)
 
 
 
