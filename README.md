@@ -57,13 +57,25 @@ python train_CSLL2M.py [config file]
 * e.g.
 1. Train CSL-L2M
    ```bash
-   python train.py config/CSLL2M.yaml
+   python train_CSLL2M.py config/CSLL2M.yaml
    ```
 3. Train CSL-L2M with learned musical features
    ```bash
-   python train.py config/CSLL2M_withLearedFeats.yaml
+   python train_CSLL2M.py config/CSLL2M_withLearedFeats.yaml
    ```
-(Note: Training on different controls can be achieved by specifying the _flag_ parameters of the config file. We provide our trained [CSL-L2M](https://drive.google.com/file/d/1ylVTiDd_fwif2ISQzn9bxxYSkfEzXjQu/view?usp=drive_link) and [CSL-L2M with learned musical features](https://drive.google.com/file/d/1U6xazAovM7Yp5d-DtxrzhsF_3NDDIZs2/view?usp=drive_link) checkpoints.)
+(Note: Training on different controls can be achieved by specifying the _flag_ parameters of the config file. We provide our trained [CSL-L2M](https://drive.google.com/file/d/1ylVTiDd_fwif2ISQzn9bxxYSkfEzXjQu/view?usp=drive_link) and [CSL-L2M with learned musical features](https://drive.google.com/file/d/1U6xazAovM7Yp5d-DtxrzhsF_3NDDIZs2/view?usp=drive_link) checkpoints.)  
+
+
+
+## Generation
+```bash
+python generate_CSLL2M.py [config file] [ckpt path] [output dir] [num songs] [num samples per song]
+```
+* e.g.
+```bash
+python generate_CSLL2M.py config/CSLL2M.yaml pretrained_CSLL2M.pt results/ 1 5
+```
+
 
 
 
