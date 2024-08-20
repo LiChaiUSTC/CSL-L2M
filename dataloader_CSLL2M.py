@@ -295,7 +295,7 @@ class REMIalignedFullSongDataset(Dataset):
       struct_expanded = np.zeros((self.model_dec_seqlen,), dtype=int)
 
       if self.f_leared_features:
-        learned_features=pickle_load(os.path.join('/chaili/AImusic/MuseMorphose-main/Midi_withLyric_standard/REMIseq_events_tuple2_seqVQVAElatent', os.path.basename(self.pieces[idx])))[st_seq : st_seq + self.model_max_seqs]
+        learned_features=pickle_load(os.path.join('data/LearnedFeats', os.path.basename(self.pieces[idx])))[st_seq : st_seq + self.model_max_seqs]
         learned_features_expanded1 = np.zeros((self.model_max_seqs,learned_features.shape[-1]),dtype=np.float32)
         learned_features_expanded1[:learned_features.shape[0]]=learned_features
         learned_features_expanded = np.zeros((self.model_dec_seqlen,learned_features.shape[-1]),dtype=np.float32)
