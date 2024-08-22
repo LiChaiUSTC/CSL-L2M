@@ -1,0 +1,41 @@
+
+<h1 id="song-level-demo">Song-Level Generation</h1>
+<h2 id="Demo-1">Demo 1</h2>
+
+<p><strong>Given lyrics :</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;chorus&gt;
+红颜一声叹 人生过半为难
+风雨来作伴 日月沧桑变幻
+彼岸花无岸 天涯洒落花瓣
+忘了遥遥无期的尘缘
+红颜一声叹 风花雪月谁伴
+奈何君不见 尘世浮华三千
+云水间再叹 渐逝妖娆容颜
+终是红颜情断过前川
+
+&lt;verse&gt;
+昨日梨花寒 抹泪风中流转
+那千回思念是寒雾浓烟
+三生三世的温柔是我今世眷恋
+恍然一梦似风飘远
+
+&lt;chorus&gt;
+红颜一声叹 人生过半为难
+风雨来作伴 日月沧桑变幻
+彼岸花无岸 天涯洒落花瓣
+忘了遥遥无期的尘缘
+红颜一声叹 风花雪月谁伴
+奈何君不见 尘世浮华三千
+云水间再叹 渐逝妖娆容颜
+终是红颜情断过前川
+</code></pre></div></div>
+
+
+<p><strong>Melody :</strong> <audio controls="" style="width: 30%;"> <source src="1.mp3" type="audio/mpeg" /> Your browser does not support the audio element.</audio></p>
+
+
+
+
+
+
