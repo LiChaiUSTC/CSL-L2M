@@ -2,7 +2,7 @@
 
 This repository provides an implementation of the paper:
 **_CSL-L2M_: Controllable Song-Level Lyric-to-Melody Generation based on Conditional Transformer with Fine-Grained Lyric and Musical Controls**
-submitted to _AAAI-25_.  
+accepted at _AAAI-25_.  
 
 [Demo website](https://sites.google.com/view/csl-l2m/)
 
