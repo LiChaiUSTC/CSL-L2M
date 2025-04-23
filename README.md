@@ -67,7 +67,7 @@ python train_CSLL2M.py [config file]
    ```bash
    python train_CSLL2M.py config/CSLL2M_withOnlyLyrics.yaml
    ```
-(Note: Training on different controls can be achieved by specifying the _flag_ parameters of the config file. We provide our trained [CSL-L2M](https://drive.google.com/file/d/1ylVTiDd_fwif2ISQzn9bxxYSkfEzXjQu/view?usp=drive_link), [CSL-L2M with learned musical features](https://drive.google.com/file/d/1U6xazAovM7Yp5d-DtxrzhsF_3NDDIZs2/view?usp=drive_link), and [CSL-L2M conditioned on only lyrics](https://drive.google.com/file/d/1nAZCh3pV07X8Jyd_h3JwuKRlNCa57Exu/view?usp=drive_link) checkpoints.)  
+(Note: Training on different controls can be achieved by specifying the _flag_ parameters of the config file. We provide our trained [CSL-L2M](https://drive.google.com/file/d/1ylVTiDd_fwif2ISQzn9bxxYSkfEzXjQu/view?usp=drive_link), [CSL-L2M with learned musical features](https://drive.google.com/file/d/1U6xazAovM7Yp5d-DtxrzhsF_3NDDIZs2/view?usp=drive_link), and [CSL-L2M conditioned on only lyrics](https://drive.google.com/file/d/1qzi4fuOC8svvsFPYQDvrVKav469wz7Nq/view?usp=drive_link) checkpoints.)  
 
 
 ## Generation
