@@ -321,7 +321,7 @@ class REMIalignedFullSongDataset(Dataset):
           learned_features_expanded,learned_features_expanded1=0,0
     else:
       ND, Align,MCD,DMM,AA,CM,PM,DM,PV,DV,PR,DR,struct,learned_features = 0,0,0,0,0,0,0,0,0,0,0,0,0,0
-      ND_expanded, Align_expanded,MCD_expanded,DMM_expanded,AA_expanded,CM_expanded,PM_expanded,DM_expanded,PV_expanded,DV_expanded,PR_expanded,DR_expanded,struct_expanded,learned_features_expanded=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+      ND_expanded, Align_expanded,MCD_expanded,DMM_expanded,AA_expanded,CM_expanded,PM_expanded,DM_expanded,PV_expanded,DV_expanded,PR_expanded,DR_expanded,struct_expanded,learned_features_expanded,learned_features_expanded1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
     melody_tokens = convert_event(melody_events, self.event2idx, to_ndarr=False)
     seq_pos = seq_pos.tolist() + [len(melody_tokens)]
@@ -353,7 +353,7 @@ class REMIalignedFullSongDataset(Dataset):
         emotion_expanded[j]=emotion
     else:
       emotion,key=0,0
-      emotion_expanded,key_expanded=0
+      emotion_expanded,key_expanded=0,0
 
     return {
       'id': idx,
