@@ -317,7 +317,17 @@ if __name__ == "__main__":
     f_leared_features=mconf['f_leared_features'],
     use_musc_ctls=mconf['use_musc_ctls']).to(device)
   model.eval()
-  model.load_state_dict(torch.load(ckpt_path, map_location='cpu'))
+  pretrained_dict=torch.load(ckpt_path, map_location='cpu')
+
+  adjusted_weights = {}
+  for k, v in pretrained_dict.items():
+    if k in model.state_dict():
+      adjusted_weights[k] = v 
+
+  try:
+    model.load_state_dict(pretrained_dict, strict=False)
+  except:
+    model.load_state_dict(adjusted_weights, strict=False)
 
   if not os.path.exists(out_dir):
     os.makedirs(out_dir)
