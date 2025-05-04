@@ -30,8 +30,7 @@ data_dir = config['data']['data_dir']
 
 ckpt_path = sys.argv[2]
 out_dir = sys.argv[3]
-n_pieces = int(sys.argv[4])
-n_samples_per_piece = int(sys.argv[5])
+n_samples_per_piece = int(sys.argv[4])
 lyric2idx,idx2lyric = pickle_load(config['data']['vocab_path_lyric'])
 event2idx,idx2event = pickle_load(config['data']['vocab_path_melody'])
 
