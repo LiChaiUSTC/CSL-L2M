@@ -82,6 +82,7 @@ python generate.py [config file] [ckpt path] [output dir] [num samples per song]
 ```bash
 python generate_CSLL2M.py config/CSLL2M.yaml pretrained_CSLL2M.pt generated_midis/ 1 5
 ```
+or
 ```bash
 python generate.py config/CSLL2M.yaml pretrained_CSLL2M.pt generated_midis/ 5
 ```
