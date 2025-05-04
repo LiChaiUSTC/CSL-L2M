@@ -74,9 +74,16 @@ python train_CSLL2M.py [config file]
 ```bash
 python generate_CSLL2M.py [config file] [ckpt path] [output dir] [num songs] [num samples per song]
 ```
+or
+```bash
+python generate.py [config file] [ckpt path] [output dir] [num samples per song]
+```
 * e.g.
 ```bash
 python generate_CSLL2M.py config/CSLL2M.yaml pretrained_CSLL2M.pt generated_midis/ 1 5
+```
+```bash
+python generate.py config/CSLL2M.yaml pretrained_CSLL2M.pt generated_midis/ 5
 ```
 
 ## Acknowledgements
